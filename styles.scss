@@ -1,0 +1,137 @@
+$text-color: #999;
+$bigwidth: 270px;
+$maxwidth: 350px;
+$corner-radius: 2px;
+$text-size: 14px;
+$border-color: #E6E6E6;
+$blue: #3897F0;
+$in-border: 2px solid #EFEFEF;
+$in-fill-color: #FAFAFA;
+$in-height: 36px;
+$logo-height: 51px;
+$logo-width: 175px;
+
+
+* {
+  font: {
+    size: $text-size;
+    family: "arial";
+  }
+  color: $text-color;
+}
+
+
+body {
+  margin: auto;
+  background: black;
+}
+
+    .container {
+    width: $maxwidth;
+    margin: 10px auto;
+    border: 3px solid $border-color;
+    background-color: white;
+    border-radius: 2px;
+    &  small {
+    min-height: 70px;
+	  }
+}
+
+.header {
+  &__logo {
+      text-align: center;
+      margin: 30px auto;
+  }
+  &__instalogo {
+  height: $logo-height;
+  width: $logo-width;
+  margin: 0;
+  }
+  &__facebook {
+  width: $bigwidth;
+  height: 35px; 
+  border-radius: $corner-radius;
+  background-color: $blue;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  }
+  &__fblogin {
+  margin: 0;
+  width: 250px;
+  color: white;
+  }
+  .fa-facebook {
+    color: white;
+  }
+  }
+
+.orbrk {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  &__bar1 {
+  width: 50%;
+  height: 3px;
+  margin: 0 10px 0 40px;
+  background: $border-color;
+  display: inline-block
+  }
+
+  &__OR {
+  display: inline-block;
+  width: 10px;
+  margin: 0 5px;
+  padding: 15px 0;
+  text-align: center;
+  }
+  
+  &__bar2 {
+  width: 50%;
+  height: 3px;
+  margin: 0 40px 0 20px;
+  background: $border-color;
+  display: inline-block;
+  }
+}
+
+.inputsect {
+  margin: 0 40px;
+  &__textin {
+  height: 36px;
+  width: $bigwidth;
+  background-color: $in-fill-color;
+  margin-bottom: 10px;
+  border: $in-border; 
+  border-radius: $corner-radius;
+  }
+  &__signUp {
+  margin: 10px 0;
+  width: 276px;
+  height: 36px;
+  padding: 0;
+  background-color: $blue;
+  color: white;
+  border: $in-border;
+  border-radius: $corner-radius;
+  }
+}
+
+  .text {
+    &__first {
+    text-align: center;
+    margin: 10px 9% 40px 9%;
+    }
+    &__second {
+    text-align: center;
+    margin: 28px 23%;
+  }
+}
+
+.login {
+  text-decoration: none;
+  color: $blue;
+}
